@@ -17,6 +17,12 @@ import gamepad from "../img/gamepad.svg";
 import starFull from "../img/star-full.png";
 import starEmpty from "../img/star-empty.png";
 const GameDetail = ({ pathId }) => {
+  document.onkeydown = (e) => {
+    if (e.key === "Escape") {
+      document.body.style.overflow = "auto";
+      history.push("/");
+    }
+  };
   const history = useHistory();
   const exitDetailHandler = (e) => {
     const element = e.target;

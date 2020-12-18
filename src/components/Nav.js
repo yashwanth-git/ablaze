@@ -44,8 +44,9 @@ const StyledNav = styled(motion.nav)`
     width: 30%;
     font-size: 1.5rem;
     padding: 0.4em;
-    border: none;
+    border: 1px solid #eee;
     margin-top: 0.5em;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     @media (max-width: 768px) {
       width: 60%;
