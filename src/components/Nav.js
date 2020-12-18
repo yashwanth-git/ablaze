@@ -15,8 +15,10 @@ const Nav = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(fetchSearch(inputText));
-    setInputText("");
+    if (inputText !== "") {
+      dispatch(fetchSearch(inputText));
+      setInputText("");
+    }
   };
   const clearSearch = () => {
     dispatch({ type: "CLEAR_SEARCH" });
